@@ -1,0 +1,32 @@
+Acceuil: Acceuil
+A propos: À propos
+Compétences: Compétences
+Réalisations: Réalisations
+
+Bienvenue: Bienvenue
+Je suis: Je suis
+Développeur web: Développeur Web
+
+#contact form
+First name: Prénom
+Last name: Nom
+Email: Adresse d'Email
+Phone: N° Téléphone
+Message: Votre message
+
+#Admin
+Skill: Compétences
+Project: Projets
+Contact: Contacts
+
+#Properties
+ID: ID
+skill.description: Description
+skill.pourcentage: Pourcentage
+project.title: Titre
+project.description: Description
+project.adressURL: Adresse URL
+project.createdAt: Crée le
+Title : Titre
+Created at: Dévelopé le 
+

@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+
+    <!--Présentation-->
+    {% include "./sections/about.html.twig" %}
+
+    <!--Compétences-->
+     {% include "./sections/skills.html.twig" %} 
+
+    <!-- Portfolio -->
+    {% include "./sections/myprojects.html.twig" %}
+    
+    <!-- Contact -->
+    {% include "./sections/contact.html.twig" %}
+    
+{% endblock %}

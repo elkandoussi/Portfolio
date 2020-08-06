@@ -1,0 +1,28 @@
+<div class="row align-items-center">
+    <div class="col-12 p-4">
+
+        <div class="title rounded-circle d-flex flex-column justify-content-center">
+            <p><i class="fas fa-window-restore fa-3x"></i></p>
+            <h3>{{ 'Réalisations' | trans}}</h3>
+        </div>
+
+        <div class="row mt-4">
+        {% for project in projects %}
+            <div class="col-md-4 col-sm-6 col-12">          
+                <div class="card text-center">
+                    <img src="{{ vich_uploader_asset(project, 'imageFile') }}" class="card-img-top img-fluid" alt="{{project.image}}">
+                    <div class="card-body">
+                        <h5 class="card-title"> {{ project.title }} </h5>
+                        <hr class="w-50 border-dark">
+                        <button type="button" class="btn btn-primary rounded-pill" data-toggle="modal" data-target="#ex">Découvrir</button>
+                    </div>
+                </div>
+            </div>
+
+            {% include "./sections/modal.html.twig" %}
+
+        {% endfor %}
+        </div>
+
+    </div>
+</div>

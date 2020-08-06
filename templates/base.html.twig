@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Portfolio - Messaoud EL Kandoussi, Développeur Web - maroc </title>
+    {% block stylesheets %}
+    {{ encore_entry_link_tags('app') }}
+    <link rel="stylesheet" href="{{ asset('animate.css') }}">
+    {% endblock %}
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" id="header">
+            <div class="col-md-12 d-flex flex-column justify-content-around">
+
+                <div class="row">
+                    <div class="col-8">
+                        {% include "sections/navbar.html.twig" %}
+                    </div>
+                    
+                    <div class=" col-4">
+                        <p id="langs">
+                            <a class="" href="{{ path('home', {'_locale': 'fr'}) }}"> Fr </a>|
+                            <a class="" href="{{ path('home', {'_locale': 'en'}) }}"> En </a>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 col-12 text-white">
+                        {% include "sections/welcome.html.twig" %}
+                    </div>
+        
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <img src="{{ asset('images/undraw_portfolio_website_lidw.svg') }}" alt="draw" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col text-center">
+                        <a class="btn btn-warning rounded-circle p-3 down slideInDown" href="#about">
+                            <img src="{{ asset('./images/two-down-arrows.png') }}" alt="two-down-arrows">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        {% block body %}{% endblock %}
+
+        <div class="row bg-dark text-white" id="footer">
+            <div class="col-12 text-center">
+                <span>copyright 2019</span>
+            </div>
+        </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+        {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </div>
+</body>
+
+</html>

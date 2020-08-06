@@ -1,0 +1,52 @@
+<div class="row p-md-5 align-items-center" id="contact">
+    <div class="col-md-8 col-12 border shadow-lg p-3" id="form">
+        {% form_theme form 'bootstrap_4_layout.html.twig' %}
+
+        <h3 class="text-center">Contact moi !</h3>
+
+        {{ form_start(form)}}
+        <div class="row justify-content-around">
+            <div class="col-md-4 col-6">
+                {{ form_row(form.firstName) }}
+            </div>
+            <div class="col-md-4 col-6">
+                {{ form_row(form.lastName) }}
+            </div>
+        </div>
+
+        <div class="row justify-content-around">
+            <div class="col-md-4 col-6">
+                {{ form_row(form.email) }}
+            </div>
+            <div class="col-md-4 col-6">
+                {{ form_row(form.phone) }}
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-7 col-10">
+                {{ form_row(form.message) }}
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-sm-2 col-4">
+                <button type="submit" class="btn btn-success rounded-pill">Envoyer</button>
+            </div>
+        </div>
+
+        {{form_end(form)}}
+    </div>
+
+    <div class="col-md-4">
+        <ul class="list-group">
+            <li class="list-group-item list-title">ِCoordonnées :</li>
+            <li class="list-group-item"><i class="fas fa-envelope"></i> elkandoussi.mess@gmail.com</li>
+            <li class="list-group-item"><i class="fas fa-phone"></i> 06 63 18 29 02</li>
+            <li class="list-group-item">Réseaux sociaux: 
+                <a href="#facebook" class="btn btn-primary rounded-circle"><i class="fab fa-facebook-f"></i></a>
+                <a href="#twitter" class="btn btn-info rounded-circle"><i class="fab fa-twitter"></i></a>
+            </li>
+        </ul>
+    </div>
+</div>

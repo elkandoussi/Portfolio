@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto text-lg-center">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-home"></i><br>
+                    {{ 'Acceuil' | trans}} <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">
+                    <i class="far fa-address-card"></i> <br>
+                    {{ 'A propos' | trans}}
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">
+                    <i class="fas fa-code"></i> <br>
+                    {{ 'Compétences' | trans}}
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#portfolio">
+                    <i class="fas fa-window-restore"></i> <br>
+                    {{ 'Réalisations' | trans}}
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">
+                    <i class="far fa-envelope"></i> <br>
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

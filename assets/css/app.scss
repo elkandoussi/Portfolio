@@ -1,0 +1,162 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/_variables";
+$navbar-dark-color:  rgba($white, 1) !important;
+
+@import "~bootstrap";
+
+$height: 100vh;
+
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+ 
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+ 
+// Tablets and small desktops
+$screen-lg-min: 992px;
+ 
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+
+@mixin bg-perso {
+    background: #2193b0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2193b0, #6dd5ed); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2193b0, #6dd5ed); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin bg-section {
+    background: #ffe259;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+
+/*********** Header ***********/
+#header{
+   @include bg-perso;
+   height: $height;
+}
+
+#header nav {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#draw{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    border-bottom: 2px solid white;
+    font-weight: bold;
+}
+
+
+#langs{
+    color: white;
+    text-align: center;
+    
+    a{
+        font-size: 1.2em;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+    }
+
+    a:hover{
+        border-bottom: 2px solid white;
+    }
+}
+/*********** About Me ************/
+#about{
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#about h3{
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: bold;
+   text-transform: capitalize;
+   
+ }
+
+#imgProfile{
+    width: 300px;
+    height: 300px;
+    border: 5px solid black;
+    border-radius: 50% 50% 50% 50%;
+    
+    @media (max-width: $screen-sm-min){ 
+        width: 110px;
+        height: 110px;
+    }
+}
+
+/********** Skills ***********/
+
+#skills{
+    @include bg-section;   
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.title{
+    width: 190px;
+    height: 190px;
+   font-family: 'Times New Roman', Times, serif;
+   text-transform: capitalize;
+   text-align: center;
+   border: 0px solid black;
+   @include bg-perso;
+   color: white;
+   margin-left: auto;
+   margin-right: auto;
+
+   @media (max-width: $screen-lg-min){
+        width: 130px;
+        height: 130px;
+        font-size: 0.5em;
+
+        h3{
+            font-size:20px;
+        }
+   }
+}
+
+/************* Projects ***************/
+#myprojects{
+    height: height;
+}
+
+
+/*********** Contact ***************/
+#contact{
+    @include bg-section;
+}
+ 
+#form{
+    background-color: rgba($white, 1);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.list-title{
+    background-color: gray;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.down{
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+/******************* Médias Query ****************/
